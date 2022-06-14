@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ФРАГ-КЛУБ | СТРАЙКБОЛ В УЛЬЯНОВСКЕ</title>
+<meta name="keywords" content="страйбол, военные игры, тактичесике игры, спорт, игры, ульяновск">
+<meta name="description" content="Органтзация и проведение страйкбольных игр в Ульяновске">
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+<link href="font.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/server.css" rel="stylesheet">
+
+
+<script src="js/ajax"></script>
+</head>
+<style>
+	.baseBlock{
+		margin-top: 40px;
+	}
+	.mainPoster01{
+		margin: 0 0 20px 20px;
+		float: right;
+		max-height: 300px;
+    	max-width: 100%;
+	}
+</style>
+<body>
+	
+	<header>
+ <link href="css/font-family=Exo200.css" rel="stylesheet">
+<link href="css/font-family=Montserrat.css" rel="stylesheet">
+<link href="css/font-family=Montserrat300.css" rel="stylesheet">
+<link href="css/font-family=Noto+Serif.css" rel="stylesheet">
+
+<style media="screen">
+
+    .h-wrapper-scroll{
+        width: 100%;
+    	height: auto;
+        position: fixed;
+        top: 0;
+        background-color: #343434;
+        z-index: 99;
+        padding: 10px 0;
+        display: none;
+    }
+    #h-menu-ul-scroll a{
+        color: #b99653;
+        text-decoration: none;
+    }
+    #h-menu-ul-scroll a:hover{
+        color: #dddddd;
+    }
+
+    @media all and (max-width: 960px){
+        .mobMenu-cont{
+            /*display: none;*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            /*right: 0;*/
+            bottom: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: #343434;
+            z-index: 98;
+        }
+        .mobMenu-block1{
+            height: 144px;
+            padding: 0 20px;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .mobMenu-block2{
+            z-index: 99;
+        }
+        .mobMenu-block2 ul{
+            margin: 50px auto;
+            max-width: 250px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 33px;
+            line-height: 180%;
+        }
+        .mobMenu-block2>ul>li{
+            color: #b99653;
+
+        }
+        #h-block1-scroll,
+        #h-block2-scroll,
+        .scroll{
+            padding: 20px 0;
+        }
+        .h-mob-userWr{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*width: 100%;*/
+            margin: 80px 50px 50px;
+        }
+        .h-mob-userWr img{
+            height: 30px;
+        }
+        .h-mob-userNameWr{
+            color: #b99653;
+             width: 800;
+             font-size: 26px;
+        }
+    }
+
+</style>
+<div class="mobMenu-cont">
+
+    <div class="mobMenu-block1">
+        <img id="h-mobMenuClose-but" src="/img/decor/close1gr.svg" alt="close">
+    </div>
+    <div class="mobMenu-block2">
+        <ul id="h-mobMenu-ul">
+            <!-- <li><a href="/">ЛИГ</a></li> -->
+            <li><a href="/events/">СОБЫТИЯ</a></li>
+            <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+            <li><a href="/lor/">ЛИГИПЕДИЯ</a></li>
+            <li><a href="https://gt.ligix.ru">ТЕРМИНАЛ</a></li>
+                            <li><a href="/login/">АВТОРИЗАЦИЯ</a></li>
+                    </ul>
+    </div>
+    </div>
+
+<div class="h-wrapper">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+            <a href="/"><img style="fill: green;" src="/img/decor/logo_ligix_01_bk.svg" alt="lig"></a>
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul">
+                <li><a href="/events/">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="/lor/">ЛИГИПЕДИЯ</a></li>
+                <li><a href="https://gt.ligix.ru">ТЕРМИНАЛ</a></li>
+            </ul>
+                            <a id="h-menu-signin" href="/login/"><img  src="/img/decor/signin1.svg" alt="signin"></a>
+                    </div>
+
+        <div class="h-block2-mob">
+            <img id="h-mobMenu-but" src="/img/decor/menu1dg.svg" alt="menu">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="h-wrapper-scroll">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+            <a href="/"><img src="/img/decor/logo_ligix_01_br.svg" alt="lig"></a>
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul-scroll">
+                <li><a href="/events/">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="/lor/">ЛИГИПЕДИЯ</a></li>
+                <li><a href="https://gt.ligix.ru">ТЕРМИНАЛ</a><li>
+            </ul>
+                            <a id="h-menu-signin" href="/login/"><img  src="/img/decor/signin1.svg" alt="signin"></a>
+                    </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    /* разворачиваем/сворачиваем мобильное меню */
+    $('#h-mobMenu-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+    $('#h-mobMenuClose-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+
+    /* всплывающий хэдер */
+
+    var tempScrollTop, currentScrollTop = 0;
+
+    $(window).scroll(function(){
+        if ($(this).width() > 960) {
+            currentScrollTop = $(this).scrollTop();
+            if (tempScrollTop < currentScrollTop ){
+                $('.h-wrapper-scroll').fadeOut()
+            }
+            else if (tempScrollTop > currentScrollTop ){
+                if ($(this).scrollTop() > 800) {
+                    $('.h-wrapper-scroll').fadeIn()
+                }
+            }
+            tempScrollTop = currentScrollTop;
+
+            if ($(this).scrollTop() < 800) {
+                $('.h-wrapper-scroll').fadeOut()
+            }
+        }
+    });
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52062609, "init", {
+        id:52062609,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52062609" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	</header>
+
+	<div class="baseWr">
+		<div class="baseCont">
+			<div class="pageNavWr">
+				<span class="pageNavUnt">
+					<a href="airsoft.html">СТРАЙКБОЛ</a>
+				</span>
+				<span> > </span>
+				<span class="pageNavUnt">
+					ФРАГ-КЛУБ
+				</span>
+			</div>
+			<h1>ФРАГ-КЛУБ - Страйкбол в Ульяновске</h1>
+			<div class="margin40_0" >
+				<h2>Страйкбольный клуб</h2>
+				<div class="margin20_0">
+					<img class="mainPoster01" src="img/fragMain01.jpg" alt="fclabPoster">
+					<div>
+						<p>
+							Организация и проведение военно-спортивных мероприятий, сценарных страйбольных игр и турниров.
+						</p>
+						<p class="margin10_0">
+							Мы предлагаем каждому почувствовать себя в роли штурмовика спецподразделения, снайпера, пулеметчика, подрывника, агента разведки. Побывать на передовой вооруженного конфликта, охранять стратегический объект, осаждаемый противником, проводить зачисти местности, выполнять секретные миссии в тылу противника и многое другое.
+						</p>
+						<p class="margin10_0">
+							<a href="https://ligix.ru/fclub/price" target="_blanc"><b>ПРОКАТ СТРАЙКБОЛЬНОГО ОБОРУДОВАНИЯ</b></a> в Ульяновске
+						</p>
+						<p class="margin10_0">
+							По вопросам проведения игр обращайтесь по телефону <a href="tel:+79969535070"><b>+7 (996) 953-50-70</b></a>. Присоединяйтесь к группе <a href="http://vk.com/strike_game73" target="_blanc">ВКОНТАКТЕ</a> для получения скидки, так же в группе можно задать любые интересующие вопросы.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+
+		<style media="screen">
+    .foot-wrapper{
+        width: 100%;
+        background-color: #343434;
+        /*background-image: url(img/logo_crypto_01.png);
+        background-repeat: no-repeat;
+        background-position: top 2vmin right 2vmin;
+        background-size: auto 20vmin;*/
+    }
+    .foot-cont{
+        max-width: 1170px;
+        margin: 0 auto;
+        color: #b0b0b0;
+        font-family: 'Gotham Pro', sans-serif;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+    .foot-h{
+        padding: 5vmin 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(8px + 1vmin);
+    }
+    .foot-h h3{
+        padding-bottom: 80px;
+    }
+    .foot-h h4{
+        color: #b99653;
+        line-height: 120%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        /*font-family: 'Gotham Pro', sans-serif;*/
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .foot-bottom{
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: calc(6px + 1vmin);
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+        align-items: center;
+    }
+    .footLogoMain{
+        height: calc(20px + 5vmin);
+    }
+    .footLogoName{
+        height: calc(15px + 3vmin);
+    }
+    .foot-block{
+        display: flex;
+        flex-direction: column;
+        /*gap: 7px;*/
+    }
+    .foot-block-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+    }
+    .foot-block-2 img{
+        height: calc(20px + 5vmin);
+    }
+</style>
+
+<div class="foot-wrapper">
+    <div class="foot-cont">
+        <div class="foot-h">
+            <div class="foot-block">
+                <a href="/">
+                    <div class="foot-logo-wr">
+                        <img class="footLogoMain" src="/img/ligMainLogoBronze300.png" alt="lig">
+                        <img class="footLogoName" src="/img/logo_name_01.svg" alt="lig">
+                    </div>
+                </a>
+            </div>
+            <div class="foot-block">
+                <p><a class="aNoDecor" href="https://vk.com/ligix" target="_blank">vk.com/ligix</a></p>
+                <p><a class="aNoDecor" href="https://t.me/ligix" target="_blank">t.me/ligix</a></p>
+                <p><a class="aNoDecor" href="mailto:ligix1001@gmail.com">ligix1001@gmail.com</a></p>
+            </div>
+            
+        </div>
+        <div class="foot-bottom">
+            LIGIX &copy; 2014 - 2022        </div>
+    </div>
+</div>
+
+	</footer>
+
+	
+</body>
+</html>
