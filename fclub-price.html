@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ФРАГ-КЛУБ | СТРАЙКБОЛ В УЛЬЯНОВСКЕ</title>
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+<link href="font.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/server.css" rel="stylesheet">
+
+
+<script src="js/ajax"></script>
+</head>
+<style>
+	
+	.baseBlock{
+		margin-top: 40px;
+	}
+	.mainPoster01{
+		margin: 0 0 20px 20px;
+		float: right;
+		height: 300px;
+	}
+	.priceWr{
+		width: 100%;
+		border: 1px solid silver;
+		background-color: #FEFEFE;
+	}
+	.priceCont{
+		margin: 10px;
+		/*width: 100%;*/
+		/*overflow-x: auto;*/
+	}
+	.priceWr h2{
+		text-align: center;
+	}
+	.priceWr h3{
+		font-family: 'Gotham Pro', Arial, sans-serif;
+		color: #343434;
+		line-height: 120%;
+		font-weight: 600;
+		letter-spacing: 0;
+		font-size: 19px;
+		text-align: center;
+		margin-top: 40px;
+	}
+	.priceTabWr{
+		overflow-x: auto;
+	}
+	.priceTab{
+		margin-top: 20px;
+		width: calc(100%);
+		border: 1px solid silver;
+		border-collapse: collapse;
+	}
+	.priceTabWr th,
+	.priceTabWr td{
+		border: 1px solid silver;
+		padding: 7px;
+	}
+	.tuW_50{
+		width: 50%;
+	}
+	.tuCenter{
+		text-align: center;
+	}
+	.tuBold{
+		font-weight: 600;
+	}
+	.tabHead01{
+		font-weight: 600;
+		text-align: center;
+	}
+	.tabHead02{
+		font-weight: 300;
+		font-size: calc(5px + 1vmin);
+		width: 15%;
+	}
+	.tabCost{
+		font-weight: 600;
+		text-align: center;
+	}
+	.tabTitle{
+		font-weight: 600;
+		font-size: calc(5px + 1.7vmin);
+		text-align: center;
+	}
+	.priceDict{
+		margin: 20px 10px 0 10px;
+		font-size: calc(5px + 1vmin);
+	}
+	.priceDict02{
+		margin: 5px;
+		font-size: calc(5px + 1.2vmin);
+		text-align: center;
+	}
+</style>
+<body>
+	
+	<header>
+        <link href="css/font-family=Exo200.css" rel="stylesheet">
+        <link href="css/font-family=Montserrat.css" rel="stylesheet">
+        <link href="css/font-family=Montserrat300.css" rel="stylesheet">
+        <link href="css/font-family=Noto+Serif.css" rel="stylesheet">
+
+<style media="screen">
+
+    .h-wrapper-scroll{
+        width: 100%;
+    	height: auto;
+        position: fixed;
+        top: 0;
+        background-color: #343434;
+        z-index: 99;
+        padding: 10px 0;
+        display: none;
+    }
+    #h-menu-ul-scroll a{
+        color: #b99653;
+        text-decoration: none;
+    }
+    #h-menu-ul-scroll a:hover{
+        color: #dddddd;
+    }
+
+    @media all and (max-width: 960px){
+        .mobMenu-cont{
+            /*display: none;*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            /*right: 0;*/
+            bottom: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: #343434;
+            z-index: 98;
+        }
+        .mobMenu-block1{
+            height: 144px;
+            padding: 0 20px;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .mobMenu-block2{
+            z-index: 99;
+        }
+        .mobMenu-block2 ul{
+            margin: 50px auto;
+            max-width: 250px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 33px;
+            line-height: 180%;
+        }
+        .mobMenu-block2>ul>li{
+            color: #b99653;
+
+        }
+        #h-block1-scroll,
+        #h-block2-scroll,
+        .scroll{
+            padding: 20px 0;
+        }
+        .h-mob-userWr{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*width: 100%;*/
+            margin: 80px 50px 50px;
+        }
+        .h-mob-userWr img{
+            height: 30px;
+        }
+        .h-mob-userNameWr{
+            color: #b99653;
+             width: 800;
+             font-size: 26px;
+        }
+    }
+
+</style>
+<div class="mobMenu-cont">
+
+    <div class="mobMenu-block1">
+        <img id="h-mobMenuClose-but" src="img/close1gr.svg" alt="close">
+    </div>
+    <div class="mobMenu-block2">
+        <ul id="h-mobMenu-ul">
+            <!-- <li><a href="/">ЛИГ</a></li> -->
+            <li><a href="">СОБЫТИЯ</a></li>
+            <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+            <li><a href="">СПРАВОЧНИК</a></li>
+            <li><a href="">ТЕРМИНАЛ</a></li>
+                            <li><a href="">АВТОРИЗАЦИЯ</a></li>
+                    </ul>
+    </div>
+    </div>
+
+<div class="h-wrapper">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+            <a href="/"><img style="fill: green;" src="/img/decor/logo_ligix_01_bk.svg" alt="lig"></a>
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul">
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a></li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+        <div class="h-block2-mob">
+            <img id="h-mobMenu-but" src="img/menu1dg.svg" alt="menu">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="h-wrapper-scroll">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul-scroll">
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a><li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    /* разворачиваем/сворачиваем мобильное меню */
+    $('#h-mobMenu-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+    $('#h-mobMenuClose-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+
+    /* всплывающий хэдер */
+
+    var tempScrollTop, currentScrollTop = 0;
+
+    $(window).scroll(function(){
+        if ($(this).width() > 960) {
+            currentScrollTop = $(this).scrollTop();
+            if (tempScrollTop < currentScrollTop ){
+                $('.h-wrapper-scroll').fadeOut()
+            }
+            else if (tempScrollTop > currentScrollTop ){
+                if ($(this).scrollTop() > 800) {
+                    $('.h-wrapper-scroll').fadeIn()
+                }
+            }
+            tempScrollTop = currentScrollTop;
+
+            if ($(this).scrollTop() < 800) {
+                $('.h-wrapper-scroll').fadeOut()
+            }
+        }
+    });
+
+</script>
+
+	</header>
+
+	<div class="baseWr">
+		<div class="baseCont">
+			<div class="pageNavWr">
+				<span class="pageNavUnt">
+					<a href="airsoft.html">СТРАЙКБОЛ</a>
+				</span>
+				<span> > </span>
+				<span class="pageNavUnt">
+					<a href="fclub.html">ФРАГ-КЛУБ</a>
+				</span>
+				<span> > </span>
+				<span>Прайс</span>
+			</div>
+			<h1>ФРАГ-КЛУБ - Страйкбол в Ульяновске</h1>
+			<div class="margin40_0" >
+				<!-- <img class="mainPoster01" src="/img/decor/mainF1-1.jpg" alt="fclabPoster"> -->
+				<div class="priceWr">
+					<div class="priceCont">
+						<h2>Прокат страйкбольного снаряжения. Прайс-лист</h2>
+
+						<!-- воскреска_комплект -->
+
+						<div>
+							<h3>Участие в сборной игре (воскреске), аренда комплектов</h3>
+							<div class="priceTabWr">
+								<table class="priceTab">
+									<tr>
+										<th rowspan="2" class="tabHead01">Наим-е</th>
+										<th rowspan="2" class="tabHead01">Описание</th>
+										<th colspan="2" class="tabHead01">Аренда комплекта (на всю игру), цена/руб.</th>
+									</tr>
+									<tr>
+										<th class="tabHead02">Стандарт</th>
+										<th class="tabHead02">Участники группы ВКОНТАКТЕ, постоянные клиенты</th>
+									</tr>
+									<tr>
+										<td class="tabTitle">ЛАЙТ</td>
+										<td>
+											<p><b>Пистолет</b></p>
+											<p>Магазин на 15 шаров</p>
+											<p>Боекомплект: 200 шаров, 2 баллона СО2</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук</p>
+										</td>
+										<td class="tabCost">500</td>
+										<td class="tabCost">400</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">БАЗОВЫЙ</td>
+										<td>
+											<p><b>Привод АК или М4</b></p>
+											<p>Бункерный магазин*</p>
+											<p>Боекомплект: 400 шаров</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук</p>
+										</td>
+										<td class="tabCost">1000</td>
+										<td class="tabCost">900</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ПРОФИ</td>
+										<td>
+											<p><b>Привод АК или М4</b></p>
+											<p>Механические магазины** х4шт</p>
+											<p>Боекомплект: 400 шаров</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук, разгрузочная система</p>
+										</td>
+										<td class="tabCost">1200</td>
+										<td class="tabCost">1100</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ЭЛИТ</td>
+										<td>
+											<p><b>Привод АК или М4, пистолет</b></p>
+											<p>Механические магазины** х4шт</p>
+											<p>Боекомплект: 400 шаров, 1 баллон CO2</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук, разгрузочная система</p>
+										</td>
+										<td class="tabCost">1400</td>
+										<td class="tabCost">1300</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ДОКУПКА ШАРОВ</td>
+										<td>
+											<p>Дополнительные 400 шаров</p>
+										</td>
+										<td colspan="2" class="tabCost">200</td>
+									</tr>
+								</table>
+							</div>
+							<div class="priceDict">
+								<p>
+									<b>*</b> Бункерый магазин обладает средней вместимостью в 400 шаров, не требует постоянной замены вовремя игры. Рекомендуется для начинающих.
+								</p>
+								<p>
+									<b>**</b> Механический магазин, обладает средней вместимостью в 100 шаров, т.е. игроку придется регулярно менять магазин в "боевых условиях". Рекомендуется для более опытных игроков..
+								</p>
+							</div>
+						</div>
+						<!-- воскреска_не_комплект -->
+						<div>
+							<h3>Участие в сборной игре (воскреске). Не комплектная аренда снаряжения</h3>
+							<div class="priceTabWr">
+								<table class="priceTab">
+									<tr>
+										<th rowspan="2" class="tabHead01">Наименование</th>
+										<th rowspan="2" class="tabHead01">Описание</th>
+										<th colspan="2" class="tabHead01">Аренда комплекта (на всю игру), цена/руб.</th>
+									</tr>
+									<tr>
+										<th class="tabHead02">Стандарт</th>
+										<th class="tabHead02">Участники группы, постоянные клиенты</th>
+									</tr>
+									<tr>
+										<td class="tabTitle">Привод/автомат</td>
+										<td>
+											<p>Ак или М4</p>
+										</td>
+										<td class="tabCost">800</td>
+										<td class="tabCost">700</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">Камуфляж</td>
+										<td>
+											<p>Маскхалат</p>
+										</td>
+										<td colspan="2" class="tabCost">100</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">Защита лица </td>
+										<td>
+											<p>Очки + маска</p>
+										</td>
+										<td colspan="2" class="tabCost">100</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">Разгрузка</td>
+										<td>
+											<p>Жилет или РПС система</p>
+										</td>
+										<td colspan="2" class="tabCost">100</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">Механические магазины</td>
+										<td>
+											<p>Ак или М4 типа</p>
+										</td>
+										<td colspan="2" class="tabCost">50</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<!-- индивидуальное_мероприятие -->
+						<div>
+							<h3>Проведение индивидуального мероприятия</h3>
+							<p class="priceDict02">Игры организуются при количестве участников от 6 человек и более</p>
+							<div class="priceTabWr">
+								<table class="priceTab">
+									<tr>
+										<th rowspan="2" class="tabHead01">Наименование</th>
+										<th rowspan="2" class="tabHead01">Описание</th>
+										<th colspan="2" class="tabHead01">Аренда комплекта (на всю игру), цена/руб.</th>
+									</tr>
+									<tr>
+										<th class="tabHead02">Стандарт</th>
+										<th class="tabHead02">Участники группы ВКОНТАКТЕ, постоянные клиенты</th>
+									</tr>
+									<tr>
+										<td class="tabTitle">ЛАЙТ</td>
+										<td>
+											<p><b>Пистолет</b></p>
+											<p>Магазин на 15 шаров</p>
+											<p>Боекомплект: 200 шаров, 2 баллона СО2</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук</p>
+										</td>
+										<td class="tabCost">600</td>
+										<td class="tabCost">500</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">БАЗОВЫЙ</td>
+										<td>
+											<p><b>Привод АК или М4</b></p>
+											<p>Бункерный магазин*</p>
+											<p>Боекомплект: 400 шаров</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук</p>
+										</td>
+										<td class="tabCost">1200</td>
+										<td class="tabCost">1100</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ПРОФИ</td>
+										<td>
+											<p><b>Привод АК или М4</b></p>
+											<p>Механические магазины** х4шт</p>
+											<p>Боекомплект: 400 шаров</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук, разгрузочная система</p>
+										</td>
+										<td class="tabCost">1400</td>
+										<td class="tabCost">1300</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ЭЛИТ</td>
+										<td>
+											<p><b>Привод АК или М4, пистолет</b></p>
+											<p>Механические магазины** х4шт</p>
+											<p>Боекомплект: 400 шаров, 1 баллон CO2</p>
+											<p>Экипировка: камуфляжный костюм, защита лица и рук, разгрузочная система</p>
+										</td>
+										<td class="tabCost">1600</td>
+										<td class="tabCost">1500</td>
+									</tr>
+									<tr>
+										<td class="tabTitle">ДОКУПКА ШАРОВ</td>
+										<td>
+											<p>Дополнительные 400 шаров</p>
+										</td>
+										<td colspan="2" class="tabCost">200</td>
+									</tr>
+								</table>
+							</div>
+							<div class="priceDict">
+								<p>
+									<b>*</b> Бункерый магазин обладает средней вместимостью в 400 шаров, не требует постоянной замены вовремя игры. Рекомендуется для начинающих.
+								</p>
+								<p>
+									<b>**</b> Механический магазин, обладает средней вместимостью в 100 шаров, т.е. игроку придется регулярно менять магазин в "боевых условиях". Рекомендуется для более опытных игроков..
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+
+		<style media="screen">
+    .foot-wrapper{
+        width: 100%;
+        background-color: #343434;
+        /*background-image: url(img/logo_crypto_01.png);
+        background-repeat: no-repeat;
+        background-position: top 2vmin right 2vmin;
+        background-size: auto 20vmin;*/
+    }
+    .foot-cont{
+        max-width: 1170px;
+        margin: 0 auto;
+        color: #b0b0b0;
+        font-family: 'Gotham Pro', sans-serif;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+    .foot-h{
+        padding: 5vmin 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(8px + 1vmin);
+    }
+    .foot-h h3{
+        padding-bottom: 80px;
+    }
+    .foot-h h4{
+        color: #b99653;
+        line-height: 120%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        /*font-family: 'Gotham Pro', sans-serif;*/
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .foot-bottom{
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: calc(6px + 1vmin);
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+        align-items: center;
+    }
+    .footLogoMain{
+        height: calc(20px + 5vmin);
+    }
+    .footLogoName{
+        height: calc(15px + 3vmin);
+    }
+    .foot-block{
+        display: flex;
+        flex-direction: column;
+        /*gap: 7px;*/
+    }
+    .foot-block-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+    }
+    .foot-block-2 img{
+        height: calc(20px + 5vmin);
+    }
+</style>
+
+<div class="foot-wrapper">
+    <div class="foot-cont">
+        <div class="foot-h">
+            <div class="foot-block">
+                <a href="/">
+                    <div class="foot-logo-wr">
+                        <img class="footLogoMain" src="img/ligMainLogoBronze300.png" alt="lig">
+                    </div>
+                </a>
+            </div>
+            <div class="foot-block">
+                <p><a class="aNoDecor" href="https://vk.com/Lemon_G" target="_blank">vk.com/Lemon_G</a></p>
+
+            </div>
+            
+        </div>
+        <div class="foot-bottom">
+             &copy; 2022        </div>
+    </div>
+</div>
+
+	</footer>
+
+	
+</body>
+</html>
