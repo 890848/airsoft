@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>МИР СТРАЙКБОЛА | СПРАВОЧНИК</title>
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+<link href="font.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/server.css" rel="stylesheet">
+
+
+<script src="js/ajax"></script>
+</head>
+<style>
+	.baseWr{
+		font-family: Gotham Pro, Arial, sans-serif;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.baseCont{
+		width: 100%;
+		max-width: 1170px;
+		margin: 60px 20px 100px;
+	}
+	.baseBlock{
+		margin-top: 40px;
+	}
+	.intLogo{
+		margin-right: 20px;
+		float: left;
+	}
+	.inTextImg001{
+		height: 25px;
+	}
+</style>
+<body>
+	
+	<header>
+        <link href="css/font-family=Exo200.css" rel="stylesheet">
+        <link href="css/font-family=Montserrat.css" rel="stylesheet">
+        <link href="css/font-family=Montserrat300.css" rel="stylesheet">
+        <link href="css/font-family=Noto+Serif.css" rel="stylesheet">
+
+<style media="screen">
+
+    .h-wrapper-scroll{
+        width: 100%;
+    	height: auto;
+        position: fixed;
+        top: 0;
+        background-color: #343434;
+        z-index: 99;
+        padding: 10px 0;
+        display: none;
+    }
+    #h-menu-ul-scroll a{
+        color: #b99653;
+        text-decoration: none;
+    }
+    #h-menu-ul-scroll a:hover{
+        color: #dddddd;
+    }
+
+    @media all and (max-width: 960px){
+        .mobMenu-cont{
+            /*display: none;*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            /*right: 0;*/
+            bottom: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: #343434;
+            z-index: 98;
+        }
+        .mobMenu-block1{
+            height: 144px;
+            padding: 0 20px;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .mobMenu-block2{
+            z-index: 99;
+        }
+        .mobMenu-block2 ul{
+            margin: 50px auto;
+            max-width: 250px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 33px;
+            line-height: 180%;
+        }
+        .mobMenu-block2>ul>li{
+            color: #b99653;
+
+        }
+        #h-block1-scroll,
+        #h-block2-scroll,
+        .scroll{
+            padding: 20px 0;
+        }
+        .h-mob-userWr{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*width: 100%;*/
+            margin: 80px 50px 50px;
+        }
+        .h-mob-userWr img{
+            height: 30px;
+        }
+        .h-mob-userNameWr{
+            color: #b99653;
+             width: 800;
+             font-size: 26px;
+        }
+    }
+
+</style>
+<div class="mobMenu-cont">
+
+    <div class="mobMenu-block1">
+        <img id="h-mobMenuClose-but" src="img/close1gr.svg" alt="close">
+    </div>
+    <div class="mobMenu-block2">
+        <ul id="h-mobMenu-ul">
+            <!-- <li><a href="/">ЛИГ</a></li> -->
+            <li><a href="index/html">ГЛАВНАЯ</a></li>
+            <li><a href="">СОБЫТИЯ</a></li>
+            <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+            <li><a href="lor.html">СПРАВОЧНИК</a></li>
+            <li><a href="">ТЕРМИНАЛ</a><li>
+                            <li><a href="">АВТОРИЗАЦИЯ</a></li>
+                    </ul>
+    </div>
+    </div>
+
+<div class="h-wrapper">
+
+    <div class="h-cont">
+
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul">
+                <li><a href="index/html">ГЛАВНАЯ</a></li>
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="lor.html">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a><li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+        <div class="h-block2-mob">
+            <img id="h-mobMenu-but" src="img/menu1dg.svg" alt="menu">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="h-wrapper-scroll">
+
+    <div class="h-cont">
+
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul-scroll">
+                <li><a href="index/html">ГЛАВНАЯ</a></li>
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft.html">СТРАЙКБОЛ</a></li>
+                <li><a href="lor.html">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a><li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    /* разворачиваем/сворачиваем мобильное меню */
+    $('#h-mobMenu-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+    $('#h-mobMenuClose-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+
+    /* всплывающий хэдер */
+
+    var tempScrollTop, currentScrollTop = 0;
+
+    $(window).scroll(function(){
+        if ($(this).width() > 960) {
+            currentScrollTop = $(this).scrollTop();
+            if (tempScrollTop < currentScrollTop ){
+                $('.h-wrapper-scroll').fadeOut()
+            }
+            else if (tempScrollTop > currentScrollTop ){
+                if ($(this).scrollTop() > 800) {
+                    $('.h-wrapper-scroll').fadeIn()
+                }
+            }
+            tempScrollTop = currentScrollTop;
+
+            if ($(this).scrollTop() < 800) {
+                $('.h-wrapper-scroll').fadeOut()
+            }
+        }
+    });
+
+</script>
+
+	</header>
+
+	<div class="baseWr">
+		<div class="baseCont">
+			<div class="pageNavWr">
+				<span class="pageNavUnt">
+					<a href="lor.html">СПРАВОЧНИК</a>
+				</span>
+				<span> > </span>
+				<span class="pageNavUnt">
+					Ключи Опыта
+				</span>
+			</div>
+			<h1>СПРАВОЧНИК </h1>
+			<div class="margin40_0" >
+				<h2>КЛЮЧИ ОПЫТА</h2>
+				<div class="margin20_0">
+					<img class="mainPoster01" src="img/КО_001.png" alt="exp_keys">
+					<div class="mt-1">
+						<b>КО</b> - Разновидность Код-Ключей, регистрируя которые, Игроки получают баллы в <b>Рейтинг Лиги Игроков</b>. Чаще всего игроки получают <b>Ключи Опыта</b> в виде карточек по окончанию игры. <b>КО</b> имеют различный номинал - от 1 до 10 баллов, в зависимости от статуса мероприятия и достижений Игроков.
+					</div>
+					<div class="mt-1">
+						Для регистрации <b>Ключа ОПЫТА</b> достаточно открыть <a href=""><b>Терминал Игрока</b></a>, нажать на значек ключа <img class="inTextImg001" src="img/key1.svg" alt=""> и ввести Код-Ключ.
+					</div>
+					<div class="mt-1">
+						Если вы делаете это в первые, но придется зарегистрировать учетную запись, это занимает около 1 минуты.
+					</div>
+					<div class="mt-1">
+						Существует правило: <b>одно мероприятие - один КО</b>. Система попросту не примет более одного Ключа к одному мероприятию.
+						<p>Однако в случае если будет выявлены монипуляции с внесением баллов в рейтинг, например, если Игрок не был на мироприятии, но зарегистрировал чужой Ключ Опыта, то он будет <b>оштрафован снятием баллов</b> из рейтинга, при повторном нарушении его рейтинг может быть <b>обнулен</b> и вплоть до <b>бана</b> на платформе <b>Ligix</b>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+
+		<style media="screen">
+    .foot-wrapper{
+        width: 100%;
+        background-color: #343434;
+        /*background-image: url(img/logo_crypto_01.png);
+        background-repeat: no-repeat;
+        background-position: top 2vmin right 2vmin;
+        background-size: auto 20vmin;*/
+    }
+    .foot-cont{
+        max-width: 1170px;
+        margin: 0 auto;
+        color: #b0b0b0;
+        font-family: 'Gotham Pro', sans-serif;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+    .foot-h{
+        padding: 5vmin 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(8px + 1vmin);
+    }
+    .foot-h h3{
+        padding-bottom: 80px;
+    }
+    .foot-h h4{
+        color: #b99653;
+        line-height: 120%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        /*font-family: 'Gotham Pro', sans-serif;*/
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .foot-bottom{
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: calc(6px + 1vmin);
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+        align-items: center;
+    }
+    .footLogoMain{
+        height: calc(20px + 5vmin);
+    }
+    .footLogoName{
+        height: calc(15px + 3vmin);
+    }
+    .foot-block{
+        display: flex;
+        flex-direction: column;
+        /*gap: 7px;*/
+    }
+    .foot-block-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+    }
+    .foot-block-2 img{
+        height: calc(20px + 5vmin);
+    }
+</style>
+
+<div class="foot-wrapper">
+    <div class="foot-cont">
+        <div class="foot-h">
+            <div class="foot-block">
+                <a href="index.html">
+                    <div class="foot-logo-wr">
+                        <img class="footLogoMain" src="img/ligMainLogoBronze300.png" alt="lig">
+
+                    </div>
+                </a>
+            </div>
+            <div class="foot-block">
+                <p><a class="aNoDecor" href="https://vk.com/Lemon_G" target="_blank">vk.com/Lemon_G</a></p>
+            </div>
+            
+        </div>
+        <div class="foot-bottom">
+            &copy; 2022        </div>
+    </div>
+</div>
+
+	</footer>
+
+	
+</body>
+</html>
