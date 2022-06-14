@@ -1,0 +1,132 @@
+.mobMenu-cont{
+    display: none;
+}
+.h-block2-mob{
+    display: none;
+}
+
+
+@media all and (max-width: 960px){
+    .h-block2{
+        display: none;
+    }
+    .mobMenu-cont{
+        display: none;
+    }
+    .h-block2-mob{
+        display: flex;
+        align-items: center;
+    }
+    .h-cont{
+        width: 90%;
+    }
+    .main-sect-block{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main-sect-block2{
+        width: 100%;
+    }
+    .main-sect-block2 p{
+        width: 100%;
+    }
+    h1.heading,
+    .main-sect3-block2 h2,
+    .main-sect4-block2 h2{
+        font-size: 30px;
+    }
+
+    .main-sect3-block1{
+        text-align: center;
+    }
+    .main-sect3-block1 img{
+        max-width: 450px;
+        width: 90%;
+    }
+    .main-sect3-block2{
+        max-width: none;
+        width: 90%;
+        padding: 0;
+    }
+    .main-sect3-back-color{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-sect4-cont{
+        flex-direction: column;
+        flex-flow: wrap;
+        padding: 20px 0;
+        align-items: center;
+    }
+    .main-sect4-block2{
+        margin: 0 auto;
+        order: 2;
+    }
+    .main-sect4-block1{
+        margin: 0 auto;
+        text-align: center;
+        order: 1;
+    }
+    .main-sect4-block1 img{
+        max-width: 450px;
+        width: 90%;
+    }
+    .main-sect4-block2{
+        max-width: none;
+        width: 90%;
+        padding: 0;
+    }
+    .main-sect4-back-color{
+        width: 100%;
+        height: 100%;
+    }
+    .main-sect3-cont{
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-h{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        gap: 2vmin;
+    }
+    .foot-h h3{
+        text-align: center;
+    }
+    .foot-block{
+        margin: 0 auto;
+    }
+    .foot-bottom{
+        padding: 0 10px 20px;
+    }
+
+    /* РђР’РўРћР РР—РђР¦РРЇ */
+
+    .signup-sect1-cont{
+        max-width: none;
+        width: 100%;
+    }
+    .signup-sect1-back-color{
+        top: 10px;
+        left: 10px;
+    }
+    .but1-wrap{
+        text-align: left;
+    }
+    .signup-sect1-block1-text h1{
+        font-size: calc(8px + 4vmin);
+    }
+
+
+    /* Р Р•Р“РЈР›РЇР РќР«Р• РЎРўР РђРќРР¦Р« */
+
+    /*.mainPoster01{
+        width: 100%;
+        max-height: unset;
+    }*/
+}
