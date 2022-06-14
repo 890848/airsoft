@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> ЛАЗЕРТАГ В УЛЬЯНОВСКЕ | ЛАЗЕРТАК и СТРАЙКБОЛ - СРАВНЕНИЕ</title>
+<meta name="keywords" content="лазертаг, военные игры, тактичесике игры, спорт, игры, ульяновск">
+<meta name="description" content="Органтзация и проведение лазертаг игр в Ульяновске. Лазертаг - высокотехнологичная игра, происходящая в реальном времени и пространстве.">
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+<link href="font.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/server.css" rel="stylesheet">
+
+
+<script src="js/ajax"></script>
+</head>
+<style>
+	.baseBlock{
+		margin-top: 40px;
+	}
+</style>
+<body>
+	
+	<header>
+    <link href="css/font-family=Exo200.css" rel="stylesheet">
+<link href="css/font-family=Montserrat.css" rel="stylesheet">
+<link href="css/font-family=Montserrat300.css" rel="stylesheet">
+<link href="css/font-family=Noto+Serif.css" rel="stylesheet">
+        
+
+<style media="screen">
+
+    .h-wrapper-scroll{
+        width: 100%;
+    	height: auto;
+        position: fixed;
+        top: 0;
+        background-color: #343434;
+        z-index: 99;
+        padding: 10px 0;
+        display: none;
+    }
+    #h-menu-ul-scroll a{
+        color: #b99653;
+        text-decoration: none;
+    }
+    #h-menu-ul-scroll a:hover{
+        color: #dddddd;
+    }
+
+    @media all and (max-width: 960px){
+        .mobMenu-cont{
+            /*display: none;*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            /*right: 0;*/
+            bottom: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background-color: #343434;
+            z-index: 98;
+        }
+        .mobMenu-block1{
+            height: 144px;
+            padding: 0 20px;
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .mobMenu-block2{
+            z-index: 99;
+        }
+        .mobMenu-block2 ul{
+            margin: 50px auto;
+            max-width: 250px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 33px;
+            line-height: 180%;
+        }
+        .mobMenu-block2>ul>li{
+            color: #b99653;
+
+        }
+        #h-block1-scroll,
+        #h-block2-scroll,
+        .scroll{
+            padding: 20px 0;
+        }
+        .h-mob-userWr{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*width: 100%;*/
+            margin: 80px 50px 50px;
+        }
+        .h-mob-userWr img{
+            height: 30px;
+        }
+        .h-mob-userNameWr{
+            color: #b99653;
+             width: 800;
+             font-size: 26px;
+        }
+    }
+
+</style>
+<div class="mobMenu-cont">
+
+    <div class="mobMenu-block1">
+        <img id="h-mobMenuClose-but" src="img/close1gr.svg" alt="close">
+    </div>
+    <div class="mobMenu-block2">
+        <ul id="h-mobMenu-ul">
+            <!-- <li><a href="/">ЛИГ</a></li> -->
+            <li><a href="">СОБЫТИЯ</a></li>
+            <li><a href="airsoft/main.html">СТРАЙКБОЛ</a></li>
+            <li><a href="">СПРАВОЧНИК</a></li>
+            <li><a href="">ТЕРМИНАЛ</a></li>
+                            <li><a href="">АВТОРИЗАЦИЯ</a></li>
+                    </ul>
+    </div>
+    </div>
+
+<div class="h-wrapper">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul">
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft/main.html">СТРАЙКБОЛ</a></li>
+                <li><a href="">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a></li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+        <div class="h-block2-mob">
+            <img id="h-mobMenu-but" src="img/menu1dg.svg" alt="menu">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="h-wrapper-scroll">
+
+    <div class="h-cont">
+
+        <div class="h-block1">
+
+        </div>
+
+        <div class="h-block2">
+            <ul id="h-menu-ul-scroll">
+                <li><a href="">СОБЫТИЯ</a></li>
+                <li><a href="airsoft/main.html">СТРАЙКБОЛ</a></li>
+                <li><a href="">СПРАВОЧНИК</a></li>
+                <li><a href="">ТЕРМИНАЛ</a><li>
+            </ul>
+                            <a id="h-menu-signin" href=""><img  src="img/signin1.svg" alt="signin"></a>
+                    </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    /* разворачиваем/сворачиваем мобильное меню */
+    $('#h-mobMenu-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+    $('#h-mobMenuClose-but').click(function(){
+        $('.mobMenu-cont').animate({width: 'toggle'},200);
+        /*$('.mobMenu-cont').show(2000);*/
+    });
+
+    /* всплывающий хэдер */
+
+    var tempScrollTop, currentScrollTop = 0;
+
+    $(window).scroll(function(){
+        if ($(this).width() > 960) {
+            currentScrollTop = $(this).scrollTop();
+            if (tempScrollTop < currentScrollTop ){
+                $('.h-wrapper-scroll').fadeOut()
+            }
+            else if (tempScrollTop > currentScrollTop ){
+                if ($(this).scrollTop() > 800) {
+                    $('.h-wrapper-scroll').fadeIn()
+                }
+            }
+            tempScrollTop = currentScrollTop;
+
+            if ($(this).scrollTop() < 800) {
+                $('.h-wrapper-scroll').fadeOut()
+            }
+        }
+    });
+
+</script>
+
+	</header>
+
+	<div class="baseWr">
+		<div class="baseCont">
+			<div class="pageNavWr">
+				<span class="pageNavUnt">
+					<a href="airsoft/main.html">СТРАЙКБОЛ</a>
+				</span>
+				<span> > </span>
+				<span class="pageNavUnt">
+					<a href="airsoft/strikeball-whatis.html/">Что такое страйкбол?</a>
+				</span>
+				<span> > </span>
+				<span>Лазертаг vs Страйкбол</span>
+			</div>
+			<h1>Лазертаг vs Страйкбол</h1>
+			<div class="margin40_0" >
+				<h2>Лазертаг и Страйкбол - сравнение</h2>
+				<div class="margin20_0">
+					<a href="img/lazertag-ul002.jpg" target="_blanc"><img class="mainPoster01" src="img/lazertag_ul002.jpg" alt="fclabPoster"></a>
+					<div>
+						<p class="margin10_0">Лазертаг в Ульяновске получил очень широкое распространение. Давайте рассмотрим сходства и различия этих двух схожих, но вместе с тем очень разных видах активного отдыха.</p>
+
+						<p class="margin10_0">Общепринятое определение: <b>Лазертаг</b> (от англ. <i>laser</i> — лазер, и <i>tag</i> — метка), или <b>лазерный бой</b>, — высокотехнологичная игра, происходящая в реальном времени и пространстве. Суть игры состоит в поражении игроков-противников (и, часто еще и специальных интерактивных мишеней, или АУЛов, — «баз») безопасными лазерными выстрелами из бластера-автомата. Собственно «поражение» игрока происходит путем регистрации луча бластера-автомата специальными датчиками оппонента (сенсорами), закрепленными на одежде игрока или на специальном жилете (повязке).</p>
+
+						<p class="margin10_0">Игроки в лазертаге оснащены оружием (<strong>тагером</strong>) и <strong>датчиками</strong> (чаще только на голове, иногда еще на специальных желетах).<strong> Тагер</strong> "стреляет" лазерным, а чаще инфракрасным лучем, когда луч попадает на датчик расположенный на снаряжении противника, регистрируется попадание, после одного или нескольких попаданий оборудование "убитого" блокируется и он не может больше стрелять. Та же технология реализована в телевизионных пультах управления, с той разницей, что <strong>тагер</strong> испускает сфокусированный и более мощный луч.</p>
+
+						<div class="margin10_0"><p>Плюсы <strong>лазертага</strong>:</p>
+							<p>Безопасность. Оружие в лазертаге не использует поражающих элементов, что сводит до минимума травмоопасноть. В лазертаг могут играть все, в числе дети и женщины, не склонные к экстримальному отдыху.</p>
+							<p>Четкая фиксация результативных попаданий. При поражении игрока, датчик, расположенный на его снаряжении загорается, что сигнализирует о попадании. Количество попаданий, после которого наступает "игровая смерть" определяется настройками оборудования (чаще от 1 до 3 попаданий). С наступлением "игровой смерти" оборудование отключается и игрок больше не может стрелять. Т.е. возможность скрыть попадание отсутствует в прицыпе.</p>
+							<p>Дальность поражения. Качественный и хорошо настроенный тагер имеет дальность поражения до 300 метров. Настройки и коструктивные составляющие позволяют регулировать дальность поражения. Что позволяет имитировать различные виды вооружений - от пистолетов до снайперских винтовок.</p>
+							<p>Однако справедливости ради стоит отметить, что инфракрасный луч расширяется по мере удаления от тагера, т.е. луч на выходе из ствола имеет диаметр с пятирублевую монет, но уже на расстоянии 100 метров, его диаметр составляет не меньше одного метра, что существенно упрощает задачу попадания в противника.</p>
+						</div>
+						<p class="margin10_0">Таким образом мы переходим к недостаткам лазертага.</p>
+						<p class="margin10_0">Упрощенная система поражения. Как уже говорилось, луч по мере удаления от ствола тагера постепенно расширяется, что значительно упрощает задачу поражения противника.</p>
+						<p class="margin10_0">Рикошеты.  Из-за довольно большого пятна поражения, при стрельбе в здании можно одним выстрелом "убить" целую группу противников, так как луч начинает отражаться от стен, потолка, пола и датчики всех игроков в комнате срабатывают на сигнал.</p>
+
+						<p class="margin10_0">Главный плюс плюс лазертага - безопасность и отсутствие поражающих элементов при стрельбе, некоторые посчитают недостатком - ведь отсутствует физический контакт, если тебя попали, максимум что ты почувствуешь - это вибрацию повязки на голове.</p>
+
+						<p class="margin10_0">Если переходить к сравнению с страйкболом, то привод (оружие в страйкболе) стреляет 6 миллимитровыми пластиковыми шариками. Привод представляет из себя, так называемую, "мягкую" пневматику, которая хоть и "мягкая", но использует при стрельбе поражающий элемент (пластиковые шарики), т.е. попадания игроки физически, по настоящему и иногда это бывает больно! Считать это плюсом или минусом - личное дело каждого, но на игру это накладывает определенный отпечаток. - это совершенно другая атмосфера, когда ты боишься покинуть укрытие, так как чувствуешь, что с другой стороны об него бьются шары, и ты знаешь, что стоит высунуть голову, можно получить шарик в лоб...</p>
+
+						<div class="margin10_0"><p>Минусы <strong>страйкбола</strong>.</p>
+							<p>Дальность. В чем без спорно страйкбол проигрывает лазертагу это дальность поражения оружия. Прицельная дальность "базовых" <strong>приводов </strong>(оружие в страйкболе) - это 30-40 метров, усиленных (или тюнингованных) - 50-60 метров, снайперские винтовки бьют на 80-100 метров. Такая сравнительно невысокая дальность обусловлена в первую очередь техникой безопасности, ведь для большей дальности пришлось бы увеличить мощность выстрела, что на более близкой дистанции может привести к травмам игроков.</p>
+							<p>Честность. Фиксация попаданий осущетвляется  самим игроком, в которого попали (он должен поднять руку с оружием вверх, громко сообщить о попадании и достать красную тряпку). Здесь появляется опасность недоборосовестности отдельных игроков, которые не сознаются в попадании.</p>
+
+							<p class="margin10_0">Если говорить о плюсах, <strong>страйкбол</strong> - это в первую очередь атмосфера! Приводы - это полноценные копии реальных прототипов огнестрельного оружия, и это тоже оружие, которое по-настоящему стреляет. Физический контакт попадания, когда ты боишься покинуть укрытие, так как чувствуешь, что с другой стороны об него бьются шары, и ты знаешь, что стоит высунуть голову, можно получить шарик в лоб...</p>
+
+							<p class="margin10_0">Данная статья не ставит целью завысить или занизить одну игровую дисциплину по сравнению с другой, каждый вид - это самостоятельная система, имеющая своих приверженцев.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="moreHrefsWr margin20_0">
+				<p><a href="airsoft/strikeball-whatis.html">> Что такое Страйкбол?</a></p>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+
+		<style media="screen">
+    .foot-wrapper{
+        width: 100%;
+        background-color: #343434;
+        /*background-image: url(img/logo_crypto_01.png);
+        background-repeat: no-repeat;
+        background-position: top 2vmin right 2vmin;
+        background-size: auto 20vmin;*/
+    }
+    .foot-cont{
+        max-width: 1170px;
+        margin: 0 auto;
+        color: #b0b0b0;
+        font-family: 'Gotham Pro', sans-serif;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+    }
+    .foot-h{
+        padding: 5vmin 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(8px + 1vmin);
+    }
+    .foot-h h3{
+        padding-bottom: 80px;
+    }
+    .foot-h h4{
+        color: #b99653;
+        line-height: 120%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        /*font-family: 'Gotham Pro', sans-serif;*/
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .foot-bottom{
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: calc(6px + 1vmin);
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+    }
+    .foot-logo-wr{
+        display: flex;
+        gap: 2vmin;
+        align-items: center;
+    }
+    .footLogoMain{
+        height: calc(20px + 5vmin);
+    }
+    .footLogoName{
+        height: calc(15px + 3vmin);
+    }
+    .foot-block{
+        display: flex;
+        flex-direction: column;
+        /*gap: 7px;*/
+    }
+    .foot-block-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+    }
+    .foot-block-2 img{
+        height: calc(20px + 5vmin);
+    }
+</style>
+
+<div class="foot-wrapper">
+    <div class="foot-cont">
+        <div class="foot-h">
+            <div class="foot-block">
+                <a href="/">
+                    <div class="foot-logo-wr">
+                        <img class="footLogoMain" src="img/ligMainLogoBronze300.png" alt="lig">
+                    </div>
+                </a>
+            </div>
+            <div class="foot-block">
+                <p><a class="aNoDecor" href="https://vk.com/Lemon_G" target="_blank">vk.com/Lemon_G</a></p>
+            </div>
+            
+        </div>
+        <div class="foot-bottom">
+             &copy; 2022        </div>
+    </div>
+</div>
+
+	</footer>
+
+	
+</body>
+</html>
