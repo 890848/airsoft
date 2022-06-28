@@ -1,0 +1,221 @@
+.header-mob{
+    display: none;
+}
+.sm-container{
+    display: none;
+    z-index: 88;
+}
+.padding2010{
+    padding: 20px 10px;
+}
+
+@media all and (max-width: 960px){
+
+    .header{
+        display: none;
+    }
+    .gt-rightpanel-wr{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+
+    .content{
+        display: block;
+        width: 100%;
+    }
+    .content2{
+        display: block;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        margin: 15px auto;
+        padding: 10px;
+    }
+    .content3{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        overflow: auto;
+    }
+    .gt-block1{
+        width: 100%;
+        margin: 0 5px;
+        padding: 10px;
+        overflow: auto;
+    }
+    .gt-wrapper{
+        width: 100%;
+    }
+    .gt-cont {
+        width: 100%;
+        margin: 10px auto;
+        padding-bottom: 50px;
+    }
+    .gt-leftpanel{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .header-mob{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobMenu-cont{
+        display: none;
+    }
+    #h-logo-mob{
+        height: 50px;
+        padding: 5px 0 5px 20px;
+    }
+    #h-mobMenu-but{
+        height: 50px;
+        padding: 5px 20px 5px 0;
+    }
+    .h-menu-block-mob{
+        position: relative;
+        z-index: 89;
+    }
+    .h-mob-popupmenu-cont{
+        position: absolute;
+        background-color: #343434;
+        color: #b99653;
+        right: 5px;
+        width: 200px;
+        padding: 20px 10px;
+        font-weight: 600;
+        text-align: right;
+        z-index: 90;
+    }
+    .h-mob-popupmenu-cont ul{
+        list-style: none;
+        line-height: 200%;
+        padding-right: 20px;
+    }
+    .h-mob-popupmenu-cont a{
+        color: #b99653;
+        text-transform: uppercase;
+    }
+
+    .sm-container{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .sm-frame{
+        background-color: rgb(208, 208, 208);
+        color: #343434;
+        margin: auto;
+        /*max-width: 95%;*/
+        width: 100%;
+        max-height: 450px;
+        overflow: auto;
+    }
+    .sm-frame h3{
+        margin-bottom: 15px;
+    }
+    .sm-frame-profile{
+        padding-top: 15px;
+    }
+    .sm-frame-profile p{
+        padding-bottom: 5px;
+    }
+    .sm-frame-set{
+
+    }
+    .sm-frame-set ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .sm-frame-set li a{
+        display: block;
+        color: #b99653;
+        background-color: #343434;
+    	margin: 5px;
+    	padding: 7px;
+    	font-weight: 600;
+    	text-align: center;
+        border-radius: 5px;
+    	box-shadow: 1px 5px 10px -5px black;
+    }
+    .sm-block-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px 0;
+    }
+    .sm-block-buttons img:first-child{
+        margin-left: 10px;
+    }
+    .sm-block-buttons img:last-child{
+        margin-right: 10px;
+    }
+    .sm-block-map-buttons{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        z-index: 88;
+        width: auto;
+        border-radius: 40px;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    .sm-button{
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+    .sm-button:active{
+        background-color: rgba(173, 173, 173, 0.8);
+    }
+    .backGrey{
+        background-color: #d0d0d0;
+    }
+    .backGrey2{
+        background-color: #eaeaea;
+    }
+    .sm-button{
+        height: 40px;
+        margin: 0 5px;
+        width: auto;
+        padding: 5px;
+        background-color: rgba(198, 198, 198, 0.7);
+        border-radius: 30px;
+    }
+
+    #mapid{
+        position: absolute;
+        background-color: #FCFCFC;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 87;
+    }
+
+    #sm-but-screenNorm{
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .meswin1{
+        width: 80%;
+    }
+    .meswin1-wrapper{
+        margin: 10px;
+        padding: 10px;
+    }
+    img.gt-poster{
+        margin: 0;
+    }
+
+    .mess-container{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 321px){
+    .sm-block-buttons{
+        justify-content: space-around;
+    }
+}
