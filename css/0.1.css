@@ -1,0 +1,57 @@
+/*
+	marginSets
+	wrapers
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {height: 100%;}
+
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* marginSets */
+.mt-1{
+	margin-top: 1vmin;
+}
+.mt-2{
+	margin-top: 2vmin;
+}
+.mt-3{
+	margin-top: 3vmin;
+}
+.mt-4{
+	margin-top: 4vmin;
+}
+.mt-5{
+	margin-top: 5vmin;
+}
+.mb-1{
+	margin-bottom: 1vmin;
+}
+.mb-2{
+	margin-bottom: 2vmin;
+}
+.mb-3{
+	margin-bottom: 3vmin;
+}
+.mb-4{
+	margin-bottom: 5vmin;
+}
+.mb-5{
+	margin-bottom: 1vmin;
+}
+
+/* wrapers */
+.wr-0{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
